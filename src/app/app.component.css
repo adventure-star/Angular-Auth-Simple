@@ -1,0 +1,10 @@
+.header-bar {
+    background-color: aqua;
+    padding: 20px;
+}
+.link {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}

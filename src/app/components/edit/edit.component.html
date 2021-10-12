@@ -1,0 +1,15 @@
+<button mat-raised-button color="primary" (click)="goToList()">Back to List</button>
+<p>edit works!</p>
+
+<form #each="ngForm" (ngSubmit)="onClickSubmit(each.value)">
+    <input type="text" name="name" [(ngModel)]="this.data[0].name" />
+    <br />
+    <br />
+    <input type="text" name="src" [(ngModel)]="this.data[0].src" />
+    <br />
+    <br />
+    <input type="text" name="type" [(ngModel)]="this.data[0].type" />
+    <br />
+    <br />
+    <input type="submit" mat-raised-button color="primary" value="Save">
+</form>

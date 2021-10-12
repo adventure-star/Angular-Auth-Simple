@@ -1,0 +1,14 @@
+<div class="header-bar">
+    <a href="/list" class="link">List</a>
+    <a href="/image" class="link">Image</a>
+    <a>
+        <div *ngIf="isUserLoggedIn; else isLogOut">
+            <a class="link" routerLink="/logout">Logout</a>
+        </div>
+        <ng-template #isLogOut>
+            <a class="link" routerLink="/login">Login</a>
+        </ng-template>
+    </a>
+</div>
+
+<router-outlet></router-outlet>

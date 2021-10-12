@@ -1,0 +1,11 @@
+<div class="heading">New Component</div>
+<p class="detail">new-component works!</p>
+<p>{{ value }}</p>
+<select>
+    <option *ngFor="let i of months">{{ i }}</option>
+</select>
+<p *ngIf="availability; else condition1">Hello</p>
+<ng-template #condition1>Hi</ng-template>
+<button (click)="clickEvent($event)">Click here!</button>
+<hr/>
+<input (keyup)="onKey($event)">

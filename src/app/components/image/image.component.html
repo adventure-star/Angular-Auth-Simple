@@ -1,0 +1,6 @@
+<p>image works!</p>
+
+<div class="col-sm" style="text-align: right;">
+    <button mat-raised-button color="primary" (click)='triggerAnimation()'>{{ this.buttonText }}</button>
+</div>
+<img [@enlarge]="isEnlarge ? 'end' : 'start'" src="assets/child-2.png" />

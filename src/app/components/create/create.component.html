@@ -1,0 +1,19 @@
+<p>create works!</p>
+
+You can see this!
+<br />
+<button (click)="showTitle($event)">Click Here!</button>
+<input type="text" [value]="title" (change)="changeTitle($event)"/>
+<p [style.color]="color">Red Title</p>
+<input type="text" [(ngModel)]="user" />
+<p>{{ entry.amount }}</p>
+<ul>
+    <li *ngFor="let std of studentArr; trackBy: trackByData" [ngClass]="{'highlight':std.name === 'student1'}">
+        {{ std.name }}
+    </li>
+</ul>
+<p appFont14>{{ user }}</p>
+<app-child [userName]="childname"></app-child>
+<p>{{ present | date | uppercase }}</p>
+<p>{{ present | customdate }}</p>
+<p>{{ count | digitcount }}</p>
